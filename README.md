@@ -1,61 +1,77 @@
-# 🛠️ API REST com Spring Boot - Projeto de Estudo
+<h1 align="center" style="color:#4CAF50;">🛠️ API REST com Spring Boot</h1>
 
-Este projeto é uma **API REST** desenvolvida com **Spring Boot** durante um curso prático, com foco em aprender os fundamentos do desenvolvimento backend moderno com Java. O principal objetivo foi construir uma aplicação CRUD completa, conectada a um banco de dados, com boas práticas e uso de ferramentas do ecossistema Spring.
-
----
-
-## ✅ O que foi desenvolvido
-
-- API RESTful com operações **CRUD** completas.
-- Conexão com banco de dados relacional usando **JPA e Spring Data**.
-- Validações de dados de entrada com **Bean Validation**.
-- Mapeamento de entidades com **JPA**.
-- Controle de versões do banco de dados com **Flyway**.
-- Organização do projeto seguindo as boas práticas do Spring Boot.
+<p align="center">
+  <em style="color:#2196F3;">Projeto de estudo para consolidar os fundamentos do desenvolvimento backend moderno com Java e Spring Boot.</em>
+</p>
 
 ---
 
-## 🧠 Conhecimentos adquiridos
+## ✅ <span style="color:#4CAF50;">Funcionalidades Desenvolvidas</span>
 
-Durante o desenvolvimento deste projeto, foram estudados e aplicados os seguintes tópicos:
-
-- Diferenças entre **Spring tradicional** e **Spring Boot**.
-- Criação do projeto com o **Spring Initializr**.
-- Estrutura padrão de diretórios e o papel do arquivo `pom.xml`.
-- Módulos utilizados:
-  - `spring-boot-starter-web`
-  - `spring-boot-starter-validation`
-  - `spring-boot-starter-data-jpa`
-- Bibliotecas utilizadas:
-  - **Lombok** para reduzir boilerplate
-  - **Flyway** para migrations
-  - **PostgreSQL Driver** para conexão com banco de dados
-- Criação e uso de:
-  - **Controllers**
-  - **Services**
-  - **Repositories**
-- Configuração da aplicação via `application.properties`.
-- Execução de **migrations com Flyway** para versionamento do schema do banco.
+- ⚙️ API RESTful com operações **<span style="color:#FF9800;">CRUD</span>** completas.  
+- 🗄️ Conexão com banco de dados relacional usando **<span style="color:#9C27B0;">Spring Data JPA</span>**.  
+- 🛡️ Validações de dados com **<span style="color:#E91E63;">Bean Validation</span>**.  
+- 🏗️ Mapeamento de entidades com **JPA**.  
+- 📜 Versionamento de banco de dados com **<span style="color:#03A9F4;">Flyway</span>**.  
+- 📂 Estrutura organizada seguindo boas práticas do **Spring Boot**.  
 
 ---
 
-## 🧰 Tecnologias
+## 🧠 <span style="color:#2196F3;">Conhecimentos Adquiridos</span>
 
-- Java 21
-- Spring Boot
-- Spring Data JPA
-- Bean Validation
-- Flyway
-- Lombok
-- PostgreSQL
-- Maven
+- Diferença entre **Spring tradicional** e **Spring Boot**  
+- Criação do projeto com **Spring Initializr**  
+- Estrutura de diretórios e papel do `pom.xml`  
+- Principais módulos:
+  - <code style="color:#FF9800;">spring-boot-starter-web</code>
+  - <code style="color:#FF9800;">spring-boot-starter-validation</code>
+  - <code style="color:#FF9800;">spring-boot-starter-data-jpa</code>
+- Bibliotecas:
+  - **Lombok** → menos boilerplate
+  - **Flyway** → migrations automáticas
+  - **PostgreSQL Driver** → integração com banco
+- Camadas implementadas:
+  - **Controller**
+  - **Service**
+  - **Repository**
+- Configuração via <code style="color:#FF5722;">application.properties</code>  
+- Execução de migrations com **Flyway**  
 
 ---
 
-## 🚀 Como executar o projeto
+## 🧰 <span style="color:#9C27B0;">Tecnologias Utilizadas</span>
 
-### 1. Clone o repositório
+| Tecnologia | Função |
+|------------|--------|
+| ☕ <span style="color:#FF5722;">Java 21</span> | Linguagem principal |
+| 🚀 <span style="color:#4CAF50;">Spring Boot</span> | Framework backend |
+| 🗄️ Spring Data JPA | Persistência no banco |
+| 🛡️ Bean Validation | Validação de dados |
+| 📜 Flyway | Migrations e versionamento |
+| 🛠 Lombok | Redução de código repetitivo |
+| 🐘 PostgreSQL | Banco de dados |
+| 📦 Maven | Gerenciador de dependências |
 
+---
+
+## 🚀 <span style="color:#FF9800;">Como Executar o Projeto</span>
+
+### 1️⃣ Clonar repositório
 ```bash
 git clone https://github.com/seu-usuario/seu-projeto.git
 cd seu-projeto
+```
+---
+
+## 📂 Estrutura do Projeto
+```bash
+src/
+ ├── main/java
+ │    ├── controller   # Endpoints REST
+ │    ├── service      # Regras de negócio
+ │    ├── repository   # Persistência
+ │    └── model        # Entidades JPA
+ └── main/resources
+      ├── application.properties
+      └── db/migration # Scripts Flyway
+
